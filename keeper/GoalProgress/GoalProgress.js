@@ -6,7 +6,6 @@ import cn from 'classnames';
 import Progress from 'react-circular-progressbar';
 import {connect} from 'react-redux';
 
-import styleVars from '../../common/styleVars';
 import GoalTable from '../GoalTable/GoalTable';
 import calcProgress from '../../common/calcProgress';
 
@@ -63,7 +62,7 @@ export class GoalProgress extends Component {
           percentage={rows[3].percentage}
           strokeWidth={3}
           styles={{path: {
-            stroke: styleVars.blue5,
+            stroke: rows[3].color,
             strokeLinecap: 'round',
           }}}
         />
@@ -72,7 +71,7 @@ export class GoalProgress extends Component {
           percentage={rows[2].percentage}
           strokeWidth={3}
           styles={{path: {
-            stroke: styleVars.blue4,
+            stroke: rows[2].color,
             strokeLinecap: 'round',
           }}}
         />
@@ -81,7 +80,7 @@ export class GoalProgress extends Component {
           percentage={rows[1].percentage}
           strokeWidth={3}
           styles={{path: {
-            stroke: styleVars.blue3,
+            stroke: rows[1].color,
             strokeLinecap: 'round',
           }}}
         />
@@ -90,7 +89,7 @@ export class GoalProgress extends Component {
           percentage={rows[0].percentage}
           strokeWidth={3}
           styles={{path: {
-            stroke: styleVars.blue2,
+            stroke: rows[0].color,
             strokeLinecap: 'round',
           }}}
         />

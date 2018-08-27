@@ -31,20 +31,30 @@ export default class GoalTable extends Component {
 
     return (
       <table className={cn(styles.GoalTable, className)}>
-        {rows.map(({group, words, target}, i) => (
-          <tr key={i}>
-            <th className={styles.group}>{group}</th>
-            <td className={styles.count}>
-              <span className={styles.number}>{toCommas(words)}</span>
-              <span className={styles.unit}>w</span>
-            </td>
-            <td className={styles.slash}>/</td>
-            <td className={styles.count}>
-              <span className={styles.number}>{toCommas(target)}</span>
-              <span className={styles.unit}>w</span>
-            </td>
-          </tr>
-        ))}
+        <tbody>
+          {rows.map(({group, words, target, percentage, color}, i) => (
+            <tr key={i}>
+              <th className={styles.group}>{group}</th>
+              <td className={styles.count}>
+                <span className={styles.number}>{toCommas(words)}</span>
+                <span className={styles.unit}>w</span>
+              </td>
+              <td className={styles.slash}>/</td>
+              <td className={styles.count}>
+                <span className={styles.number}>{toCommas(target)}</span>
+                <span className={styles.unit}>w</span>
+              </td>
+              <td className={styles.percentage}>
+                <span className={styles.number} style={{
+                  color,
+                }}>{percentage}</span>
+                <span className={styles.unit} style={{
+                  color,
+                }}>%</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     );
   }

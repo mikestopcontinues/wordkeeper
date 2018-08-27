@@ -3,6 +3,8 @@
 const _ = require('lodash');
 const moment = require('moment');
 
+const calcGoalColor = require('./calcGoalColor');
+
 // vars
 
 const yearGoal = 500000;
@@ -57,6 +59,6 @@ module.exports = function calcProgress(sessions) {
     const words = _.sumBy(groupSessions, 'words');
     const percentage = Math.floor(100 * words / target);
 
-    return {group, words, target, percentage};
+    return {group, words, target, percentage, ...calcGoalColor({words, target})};
   });
 };

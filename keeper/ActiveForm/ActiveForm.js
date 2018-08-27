@@ -8,7 +8,6 @@ import cn from 'classnames';
 import {Form, Text, Select, Option} from 'informed';
 
 import {sessionActions} from '../SessionStore/SessionStore';
-import Widget from '../Widget/Widget';
 import Icon from '../Icon/Icon';
 
 import styles from './ActiveForm.css';
@@ -56,7 +55,8 @@ export class ActiveForm extends Component {
     }
   }
 
-  _reset() {
+  _reset(...args) {
+    console.log(args);
     sessionActions.exitActiveSession();
   }
 
