@@ -1,0 +1,26 @@
+/* styles */
+
+.GoalTable {
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.group {
+  text-align: right;
+  padding-right: 12px;
+}
+
+.unit {
+  font-size: 10px;
+  color: var(--blue5);
+
+  &::before {
+    content: ' ';
+  }
+}
+
+.slash {
+  color: var(--gray4);
+  padding: 0 4px;
+}

@@ -1,0 +1,20 @@
+/* styles */
+
+.row {
+  &:hover {
+    & .action {
+      opacity: 1;
+    }
+  }
+}
+
+.action {
+  color: var(--blue5);
+  text-decoration: none;
+  transition: color 0.15s linear;
+  opacity: 0;
+
+  &:hover {
+    color: var(--green5);
+  }
+}

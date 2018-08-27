@@ -1,0 +1,58 @@
+/* styles */
+
+.GoalProgress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.yearly {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.monthly {
+  position: absolute;
+  top: 5%;
+  height: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.weekly {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.daily {
+  position: absolute;
+  top: 15%;
+  height: 70%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.table {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.grid {
+  display: inline-block;
+}

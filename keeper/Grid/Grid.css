@@ -1,0 +1,80 @@
+/* styles */
+
+.table {
+  user-select: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* rows */
+
+.headerRow {
+  border-bottom: 2px solid var(--gray3);
+
+  & > div {
+    margin: 0 5px;
+
+    &:first-of-type,
+    &:last-of-type {
+      margin: 0 5px;
+    }
+  }
+}
+
+.row {
+  & > div {
+    margin: 0 5px;
+
+    &:first-of-type,
+    &:last-of-type {
+      margin: 0 5px;
+    }
+  }
+}
+
+.oddRow {
+  background-color: var(--white);
+}
+
+.evenRow {
+  background-color: var(--pale5);
+}
+
+/* cells */
+
+.headerCell {
+  font-size: 10px;
+  text-align: right;
+  font-weight: 400;
+
+  & span {
+    display: inline;
+    overflow: auto;
+  }
+}
+
+.cell {
+  text-align: right;
+}
+
+.textCell {
+  text-align: right;
+  font-size: 12px;
+}
+
+.actionCell {
+  text-align: center;
+}
+
+.lineCell {
+  border-right: 1px solid var(--pale3);
+  height: 30px;
+}
+
+/* other */
+
+.unit {
+  color: var(--blue5);
+  margin-left: 2px;
+  font-size: 10px;
+}

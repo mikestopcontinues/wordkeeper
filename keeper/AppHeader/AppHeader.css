@@ -1,0 +1,56 @@
+/* styles */
+
+.AppHeader {
+  user-select: none;
+  overflow: hidden;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--black);
+  color: var(--white);
+  transition: background 0.15s linear;
+  box-shadow: 0 0 10px var(--dark3);
+  position: relative;
+  z-index: 100;
+
+  & a {
+    color: var(--white);
+    display: block;
+    text-decoration: none;
+    transition: color 0.15s linear;
+
+    &:hover {
+      color: var(--green5);
+    }
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: var(--green5);
+
+  & a {
+    cursor: default;
+  }
+
+  & .menu {
+    opacity: 0;
+  }
+}
+
+.logo {
+  margin-left: 6px;
+}
+
+.menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  transition: opacity 0.15s linear;
+}
+
+.menuItem {
+  flex: 0 0 36px;
+  text-align: center;
+}

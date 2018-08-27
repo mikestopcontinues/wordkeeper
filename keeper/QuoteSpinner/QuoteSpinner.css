@@ -1,0 +1,39 @@
+/* styles */
+
+.QuoteSpinner {
+  font-family: serif;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: var(--dark3);
+  height: 220px;
+  justify-content: center;
+}
+
+.message {
+  font-size: 48px;
+  line-height: 48px;
+  padding: 0 48px;
+
+  &::before {
+    content: '“';
+    color: var(--blue5);
+  }
+
+  &::after {
+    content: '”';
+    color: var(--blue5);
+  }
+}
+
+.author {
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 33%;
+
+  &::before {
+    content: '– ';
+    color: var(--blue5);
+  }
+}

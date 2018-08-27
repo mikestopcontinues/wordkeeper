@@ -1,0 +1,6 @@
+/* styles */
+
+.LogView {
+  display: flex;
+  flex-direction: column;
+}
