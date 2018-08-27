@@ -5,6 +5,7 @@ import {hot} from 'react-hot-loader';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
 import AppHeader from '../AppHeader/AppHeader';
+import AppFooter from '../AppFooter/AppFooter';
 import HomeView from '../HomeView/HomeView';
 import LogView from '../LogView/LogView';
 import AnalysisView from '../AnalysisView/AnalysisView';
@@ -27,6 +28,8 @@ export class App extends Component {
           {/* <Route component={HomeView} path="/"/> */}
           <Redirect path="*" to="/active"/>
         </Switch>
+
+        <AppFooter className={styles.footer}/>
       </div>
     );
   }

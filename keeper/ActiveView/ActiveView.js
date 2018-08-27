@@ -5,7 +5,6 @@ import pt from 'prop-types';
 import _ from 'lodash';
 import {sessionActions} from '../SessionStore/SessionStore';
 import AppContent from '../AppContent/AppContent';
-import ActiveForm from '../ActiveForm/ActiveForm';
 import QuoteSpinner from '../QuoteSpinner/QuoteSpinner';
 import GoalProgress from '../GoalProgress/GoalProgress';
 
@@ -63,10 +62,6 @@ export default class ActiveView extends Component {
 
         <div className={styles.goals}>
           <GoalProgress/>
-        </div>
-
-        <div className={styles.form}>
-          <ActiveForm/>
         </div>
       </AppContent>
     );
