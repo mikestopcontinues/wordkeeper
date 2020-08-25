@@ -103,7 +103,7 @@
     "redux-logger": "3.0.6",
     "redux-promise": "0.6.0",
     "sanitize.css": "7.0.1",
-    "sequelize": "4.38.0",
+    "sequelize": "5.15.1",
     "sqlite3": "4.0.2",
     "style-loader": "0.19.1",
     "stylelint": "9.5.0",
